@@ -5,6 +5,7 @@ app: EquatIO
 goes to: '\\to '
 limit: 'lim_'
 
+#integration
 integrate: '\\int '
 dubintegrate:
     insert('\\int ')
@@ -25,6 +26,8 @@ integral:
     user.equatio_paste_text('\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\ }}}}}}_{{ }}^{{ }}')
     edit.left()
     repeat(1)
+
+#differentiation
 prime: "'"
 partial|part: '\\partial '
 derive: 'd/d'
