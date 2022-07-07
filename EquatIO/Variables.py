@@ -131,6 +131,12 @@ def equatio_variable_start(input) -> VariablePart:
     else:
         return VariablePart('variable start', get_letter_variable_text(word, capitalized))
 
+@mod.capture(rule = '<user.equatio_variable_start>|delta')
+def equatio_simple_variable_text(input) -> str:
+    symbol = input[0]
+    if type(symbol) == VariablePart:
+        return symbol.text
+    return variable_continuation_symbols[symbol]
 
 @mod.capture(rule = '<user.equatio_variable_start>|<number>|delta|<user.equatio_exponentiation_specifier>')
 def equatio_variable_continuation(input) -> VariablePart :
