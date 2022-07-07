@@ -93,6 +93,10 @@ class Actions:
             wait_long_enough_to_let_clipboard_revert_properly()
             result = clip.text()
         return result
+    def equatio_exponentiate_text(exponent: str):
+        '''Performs the desired exponentiation'''
+        actions.insert('^' + exponent)
+        actions.edit.right()
 
 def paste_text (text: str):
 	with clip.revert():
