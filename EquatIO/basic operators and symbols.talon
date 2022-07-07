@@ -33,30 +33,6 @@ circle dot: '\\bigodot '
 bang|exclaim|exclamation [point]: '!'
 of: '('
 
-integrate: '\\int '
-dubintegrate:
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(left:3)
-triple integrate:
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(left:6)
-integral:
-    insert('\\int ')
-    key(right:2)
-(integrate|integration|integral|from) line: 
-    user.equatio_paste_text('\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\ }}}}}}_{{ }}^{{ }}')
-    edit.left()
-    repeat(1)
-prime: "'"
-partial|part: '\\partial '
-derive: 'd/d'
-(partial|part) (derive|drive|rive): '\\partial /\\partial '
 summation: user.equatio_summation()
 choose|combo|combination: '\\binom '
 
@@ -138,3 +114,5 @@ cent|cents: '¢'
 dollar|dollars: '$'
 
 vertical [line]|vert line: '\\mid '
+
+infinity|infinite: '\\infty '
