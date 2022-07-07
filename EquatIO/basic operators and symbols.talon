@@ -3,7 +3,8 @@ app: EquatIO
 text: '\\text '
 
 plus: '+'
-(negative|minus): '-'
+negative: '-'
+minus: '-'
 (times|star|(inner|dot) product): '*'
 # needed to override a community repository repeating command
 <number_small> times: 
