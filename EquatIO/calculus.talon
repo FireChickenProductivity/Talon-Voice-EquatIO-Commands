@@ -29,5 +29,13 @@ prime: "'"
 partial|part: '\\partial '
 derive: 'd/d'
 derive [order|by] <number_small>: user.equatio_leibniz_notation_derivative(number_small)
+derive [order|by] <number_small> of <user.equatio_simple_variable_text>:
+    user.equatio_leibniz_notation_derivative(number_small)
+    insert(equatio_simple_variable_text)
+    key(escape)
 (partial|part) (derive|drive|rive): '\\partial /\\partial '
 (partial|part) (derive|drive|rive) [order|by] <number_small>: user.equatio_leibniz_notation_derivative(number_small, '\\partial ')
+(partial|part) (derive|drive|rive) [order|by] <number_small> of <user.equatio_simple_variable_text>:
+    user.equatio_leibniz_notation_derivative(number_small, '\\partial ')
+    insert(equatio_simple_variable_text)
+    key(escape)
