@@ -40,8 +40,8 @@ class Actions:
                 actions.user.insert_equatio_symbol_list([element])
     def equatio_exponentiation(exponent: VariablePart):
         '''Inputs the specified exponent into equatio'''
-        actions.insert('^' + exponent.text)
-        actions.key('right')
+        actions.user.equatio_exponentiate_text(exponent.text)
+        
     def equatio_insert_variable_with_subscript(variable_start: VariablePart, variable_subscript: list):
         '''Inserts the specified subscripted variable'''
         actions.user.insert_equatio_symbol(variable_start)
