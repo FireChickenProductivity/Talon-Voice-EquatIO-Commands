@@ -8,17 +8,9 @@ limit: 'lim_'
 #integration
 integrate: '\\int '
 dubintegrate:
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(left:3)
+    user.equatio_multi_integral(2)
 triple integrate:
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(right:2)
-    insert('\\int ')
-    key(left:6)
+    user.equatio_multi_integral(3)
 integral:
     insert('\\int ')
     key(right:2)
@@ -26,6 +18,11 @@ integral:
     user.equatio_paste_text('\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\ }}}}}}_{{ }}^{{ }}')
     edit.left()
     repeat(1)
+
+dubintegrate (with|of) [respect to] <user.equatio_simple_variable_text>:
+    user.equatio_multi_integral_with_variable(2, equatio_simple_variable_text)
+triple integrate (with|of) [respect to] <user.equatio_simple_variable_text>:
+    user.equatio_multi_integral_with_variable(3, equatio_simple_variable_text)
 
 #differentiation
 prime: "'"
