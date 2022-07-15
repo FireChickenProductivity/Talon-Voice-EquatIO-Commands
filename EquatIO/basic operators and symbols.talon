@@ -34,6 +34,7 @@ bang|exclaim|exclamation [point]: '!'
 of: '('
 
 summation: user.equatio_summation()
+product: user.equatio_build_product()
 choose|combo|combination: '\\binom '
 
 ceiling: 
