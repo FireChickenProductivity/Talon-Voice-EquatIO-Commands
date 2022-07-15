@@ -29,6 +29,19 @@ Dictating power starts a superscript.
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
 
+# Movement Commands
+who: moves the cursor to the right.
+
+back: moves the cursor to the left.
+
+cape: presses escape, which usually exits the current text container. Note that a normal Talon setup already has the command escape that already presses escape.
+
+back cape or shift cape: presses shift escape, which usually exits the current text container by moving back.
+
+out: goes to the end of the current line and then to the right. Useful for things like exiting parentheses, subscripts, and superscripts.
+
+move: goes to the end of the current line.
+
 # Symbol Commands
 stuff in square brackets is optional
 
