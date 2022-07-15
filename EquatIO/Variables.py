@@ -105,6 +105,7 @@ variable_start_symbols = {
 capital_variable_start_symbols = {
     'gamma': '\\Gamma ',
     'theta': '\\Theta ',
+    'angle': '\\Theta ',
     'lambda': '\\Lambda ',
     'xi': '\\Xi ',
     'pi': '\\Pi ',
@@ -119,7 +120,7 @@ variable_continuation_symbols = {
     'delta': '\\Delta ',
 }
 
-@mod.capture(rule = '[big|tall] (alpha|beta|gamma|epsilon|zeta|small delta|eta|theta|angle|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|fee|chi|psi|omega|<user.letter>)' )
+@mod.capture(rule = '[big|tall] (alpha|beta|gamma|epsilon|zeta|small delta|eta|angle|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|fee|chi|psi|omega|<user.letter>)' )
 def equatio_variable_start(input) -> VariablePart:
     '''Produces a symbol denoting the start of a variable'''
     if input[0] == 'small' and input[1] == 'delta':
@@ -159,7 +160,7 @@ def get_letter_variable_text(word, capitalized):
     else:
         return word
 def get_variable_capitalization(input):
-    return input[0] in ['big', 'tall', 'ship']
+    return input[0] in ['big', 'tall']
 def get_variable_word(input, capitalized):
     if capitalized:
         return input[1]
