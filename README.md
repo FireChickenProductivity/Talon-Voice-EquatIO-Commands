@@ -46,6 +46,14 @@ division [by] or divide [by] or quotient: division symbol
 
 equal or equals: =
 
+unequal or inequality or inequal: inequality symbol
+
+approximately or approximate or approximation or approx: approximation symbol
+
+proportional or proportional toing or proportion: proportional to symbol
+
+congruent: congruent to symbol
+
 modulus or mod or percent or modulo: %
 
 pipe or absolute value or absolute: starts absolute value
@@ -75,4 +83,10 @@ choose or combo or combination: creates a parenthesized container that can hold 
 ceilling: ceiling function
 
 floor: floor function
+
+square root or root or square root of: square root symbol
+
+plus or minus: plus or minus symbol
+
+minus or plus: minus or plus symbol
 
