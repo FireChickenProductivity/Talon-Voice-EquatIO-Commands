@@ -18,7 +18,7 @@ divide: '\\div '
 quotient: '\\div '
 equal: '='
 equals: '='
-(to the|power): '^'
+
 (script|subscript): '_'
 (modulus|mod|percent|modulo): '%'
 (pipe|absolute value|absolute): '|'
