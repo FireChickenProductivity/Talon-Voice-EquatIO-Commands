@@ -19,7 +19,7 @@ quotient: '\\div '
 equal: '='
 equals: '='
 
-(script|subscript): '_'
+(script|subscript|sub): '_'
 (modulus|mod|percent|modulo): '%'
 (pipe|absolute value|absolute): '|'
 (great|greater|bigger) [than]: '>'
