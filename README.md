@@ -188,6 +188,25 @@ vertical [line] or vert line: creates a small vertical line
 
 infinity or infinite: infinity symbol
 
+<h2>Calculus Commands</h2>
+<h3>Limits</h3>
+limit: types lim and then subscripts.
+
+goes to: produces a right arrow.
+
+<h3>Integration</h3>
+integrate: produces an integral symbol and leaves the cursor at the integral's lower bound.
+
+integral: produces an integral symbol and moves the cursor to the right of it.
+
+dubintegrate: produces a double integral with the cursor at the first integral's lower bound.
+
+triple integrate: produces a triple integral with the cursor at the first integral's lower bound.
+
+(integrate or integration or integral or from) line: produces a vertical dashed line with a subscript and superscript to denote from the subscript value to the superscript value (it would be better to produce a line that was not dashed, which is conventional, but EquatIO does not currently provide that capability). The cursor starts out within the subscript.
+
+
+
 # Trigonometry Commands
 tangent or tan: tan
 
