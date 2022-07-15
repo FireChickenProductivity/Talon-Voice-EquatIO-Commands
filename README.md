@@ -128,3 +128,11 @@ union: union symbol
 
 intersect or intersection: intersection symbol
 
+<h2>Number Set Commands</h2>
+[the] (real or reals) [numbers]: the real numbers symbol
+
+[the] integers: the integers symbol
+
+[the] (rational or rationals) [numbers]: the rational numbers symbol
+
+[the] (irrational or irrationals): the irrational numbers symbol
