@@ -29,8 +29,10 @@ Dictating power starts a superscript.
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
 
-# Operator Commands
+# Symbol Commands
 stuff in square brackets is optional
+
+<h2>Operator Commands</h2>
 
 plus: +
 
@@ -90,7 +92,7 @@ plus or minus: plus or minus symbol
 
 minus or plus: minus or plus symbol
 
-# Logical Operators
+<h2>Logical Operator Commands</h2>
 [logical or logic] not: not symbol
 
 (logical or logic or lo) and or land: and symbol
@@ -109,7 +111,7 @@ therefore: therefore symbol
 
 because: because symbol
 
-# Set Notation
+<h2>Set Notation Commands</h2>
 element [of]: element of symbol
 
 (prop or proper) subset: proper subset symbol
