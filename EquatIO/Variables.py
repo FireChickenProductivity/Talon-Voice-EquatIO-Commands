@@ -119,7 +119,7 @@ variable_continuation_symbols = {
     'delta': '\\Delta ',
 }
 
-@mod.capture(rule = '[big|tall|ship] (alpha|beta|gamma|epsilon|zeta|small delta|eta|theta|angle|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|fee|chi|psi|omega|<user.letter>)' )
+@mod.capture(rule = '[big|tall] (alpha|beta|gamma|epsilon|zeta|small delta|eta|theta|angle|iota|kappa|lambda|mu|nu|xi|pi|rho|sigma|tau|upsilon|phi|fee|chi|psi|omega|<user.letter>)' )
 def equatio_variable_start(input) -> VariablePart:
     '''Produces a symbol denoting the start of a variable'''
     if input[0] == 'small' and input[1] == 'delta':
