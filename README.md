@@ -65,7 +65,7 @@ unequal or inequality or inequal: inequality symbol
 
 approximately or approximate or approximation or approx: approximation symbol
 
-proportional or proportional toing or proportion: proportional to symbol
+proportional or proportional to or proportion: proportional to symbol
 
 congruent: congruent to symbol
 
