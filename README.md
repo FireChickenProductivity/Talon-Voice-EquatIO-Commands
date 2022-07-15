@@ -1,6 +1,3 @@
-# Talon-Voice-EquatIO-Commands
-Talon voice commands for dictating math into EquatIO.
-
 # Dictating Variables
 Letters are dictated using the community repository phonetic alphabet.
 
