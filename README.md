@@ -36,7 +36,9 @@ plus: +
 
 minus or negative: -
 
-times or star or inner product or dot product: creates the dot multiplication symbol
+times or star or inner product or dot product: dot multiplication symbol
+
+cross [product] or by: cross multiplication symbol
 
 slash: / (starts division)
 
@@ -55,4 +57,22 @@ less [than] or lesser [than] or smaller [than]: <
 (great or greater or bigger) [than] [or] (equals or equal) [to]: greater than or equal to sign
 
 (less or lesser or smaller) [than] [or] (equals or equal) [to]: less than or equal to sign
+
+tilde or similar [to]: ~
+
+circle (product or times or cross): cross multiplication sign within a circle
+
+circle dot: dot multiplication sign within a circle
+
+bang or exclaim or exclamation [point]: !
+
+summation: summation operator
+
+product: product operator (not the multiplication sign)
+
+choose or combo or combination: creates a parenthesized container that can hold two rows of math (used for things like n choose k)
+
+ceilling: ceiling function
+
+floor: floor function
 
