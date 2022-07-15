@@ -109,3 +109,20 @@ therefore: therefore symbol
 
 because: because symbol
 
+# Set Notation
+element [of]: element of symbol
+
+(prop or proper) subset: proper subset symbol
+
+subset: subset symbol
+
+superset or soup set: superset symbol
+
+empty [set]: empty set symbol
+
+not (in or [a] member [of]): not an element of the set symbol
+
+union: union symbol
+
+intersect or intersection: intersection symbol
+
