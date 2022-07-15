@@ -86,6 +86,12 @@ ceilling: ceiling function
 
 floor: floor function
 
+(compose or composed or composition) [with or of] or small circle [shape]: function composition symbol
+
+asymp or order [of] [magnitude]: order of magnitude symbol
+
+equilibrium or balance: equilibrium symbol
+
 square root or root or square root of: square root symbol
 
 plus or minus: plus or minus symbol
@@ -160,7 +166,14 @@ line: creates the line overhead symbol
 
 (hat or overhead or above) tilde: creates the overhead tilde symbol
 
+<h2>Miscellaneous Symbol Commands</h2>
+dollar or dollars: $
 
+cent or cents: ¢
+
+vertical [line] or vert line: creates a small vertical line
+
+infinity or infinite: infinity symbol
 
 # Trigonometry Commands
 tangent or tan: tan
