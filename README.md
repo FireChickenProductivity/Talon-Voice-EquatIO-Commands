@@ -90,3 +90,22 @@ plus or minus: plus or minus symbol
 
 minus or plus: minus or plus symbol
 
+# Logical Operators
+[logical or logic] not: not symbol
+
+(logical or logic or lo) and or land: and symbol
+
+(logical or logic) or: or symbol
+
+implies: implication symbol
+
+if and only if or (dub or double) (implies or implication): double implication symbol
+
+for all: for all symbol (upside down A)
+
+[there] exists: there exists symbol (backwards E)
+
+therefore: therefore symbol
+
+because: because symbol
+
