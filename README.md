@@ -136,3 +136,44 @@ intersect or intersection: intersection symbol
 [the] (rational or rationals) [numbers]: the rational numbers symbol
 
 [the] (irrational or irrationals): the irrational numbers symbol
+
+<h2>Geometry Symbol Commands</h2>
+parallel: parallel symbol
+
+perpendicular or normal: perpendicular symbol
+
+angle (shape or symbol): a symbol representing an angle
+
+triangle [shape]: creates a triangle shaped symbol
+
+circle [circle]: creates a circle shaped symbol
+
+square shape: creates a square shaped symbol
+
+ray: creates the ray overhead symbol
+
+vector: creates the vector overhead symbol
+
+arc: creates the arc overhead symbol
+
+line: creates the line overhead symbol
+
+(hat or overhead or above) tilde: creates the overhead tilde symbol
+
+
+
+# Trigonometry Commands
+tangent or tan: tan
+
+sine: sin
+
+cosine: cos
+
+secant: sec
+
+cosecant: csc
+
+cotangent: cot
+
+degrees: creates the degrees symbol
+
