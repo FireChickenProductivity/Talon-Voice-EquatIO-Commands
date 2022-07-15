@@ -28,3 +28,23 @@ Dictating power starts a superscript.
 
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
+
+# Operator Commands
+stuff in square brackets is optional
+
+plus: +
+
+minus or negative: -
+
+times or star or inner product or dot product: creates the dot multiplication symbol
+
+slash: / (starts division)
+
+division [by] or divide [by] or quotient: division symbol
+
+equal or equals: =
+
+modulus or mod or percent or modulo: %
+
+pipe or absolute value or absolute: starts absolute value
+
