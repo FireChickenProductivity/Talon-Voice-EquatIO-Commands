@@ -48,3 +48,11 @@ modulus or mod or percent or modulo: %
 
 pipe or absolute value or absolute: starts absolute value
 
+great [than] or greater [than] or bigger [than]: >
+
+less [than] or lesser [than] or smaller [than]: <
+
+(great or greater or bigger) [than] [or] (equals or equal) [to]: greater than or equal to sign
+
+(less or lesser or smaller) [than] [or] (equals or equal) [to]: less than or equal to sign
+
