@@ -79,6 +79,11 @@ class Actions:
         paste_text(r'\sum _{ }^{ }')
         actions.edit.left()
         actions.edit.left()
+    def equatio_build_product():
+        '''Creates the product symbol and moves the cursor to the start of it'''
+        paste_text(r'\prod _{ }^{ }')
+        actions.edit.left()
+        actions.edit.left()
 
     def equatio_wait_movement_delay():
         '''Waits for the movement delay amount'''
