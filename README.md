@@ -1,7 +1,7 @@
 # Talon-Voice-EquatIO-Commands
 Talon voice commands for dictating math into EquatIO.
 
-# Dictating variables
+# Dictating Variables
 Letters are dictated using the community repository phonetic alphabet.
 
 Greek letters can be dictated using their names except for theta, which is dictated by saying angle to improve accuracy (theta kept getting mixed up with beta and eta).
@@ -28,3 +28,6 @@ Dictating to the followed by an ordinal number from second, third ... through ni
 Dictating the above exponentiation commands immediately after something that will be automatically subscripted will cause the exponentiation to go into the subscript.
 
 Dictating power starts a superscript.
+
+# Manual Subscripting
+Dictating subscript, script, or sub manually starts a subscript.
