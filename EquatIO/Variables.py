@@ -3,6 +3,7 @@ from talon import Module, actions
 mod = Module()
 
 from .VariablePart import VariablePart
+
     
 @mod.action_class
 class Actions:
@@ -13,15 +14,13 @@ class Actions:
         '''Inserts the list of equatio symbols'''
         if symbol_list == None:
             return 
-        insertion_text = ''
         for element in symbol_list:
             if element.type == 'exponentiation':
                 actions.user.equatio_exponentiation(element)
             elif element.type == 'prime':
-                actions.insert(PRIME_SYMBOL)
+                actions.insert(element.text)
             else:
                 actions.insert(element.text)
-        actions.insert(insertion_text)
     def insert_equatio_symbol_list_with_numbers_sub_scripted(symbol_list: list):
         '''Inserts the list of equatio symbols with the numbers sub scripted'''
         if symbol_list == None:
@@ -31,10 +30,6 @@ class Actions:
                 insert_subscript(element.text)
             else:
                 actions.user.insert_equatio_symbol_list([element])
-    def equatio_exponentiation(exponent: VariablePart):
-        '''Inputs the specified exponent into equatio'''
-        actions.user.equatio_exponentiate_text(exponent.text)
-        
     def equatio_insert_variable_with_subscript(variable_start: VariablePart, variable_subscript: list):
         '''Inserts the specified subscripted variable'''
         actions.user.insert_equatio_symbol(variable_start)
@@ -42,29 +37,7 @@ class Actions:
         actions.user.insert_equatio_symbol_list(variable_subscript)
         actions.key('right')
 
-    
-EXPONENTIATION_SPECIFIER = {
-    'squared': '2',
-    'cubed': '3',
-    'inverse': '-1',
-    'transpose': 'T',
-}
 
-PRIME_SYMBOL = "'"
-
-
-
-@mod.capture(rule = 'squared|cubed|inverse|transpose|prime|(to the <user.ordinals>)')
-def equatio_exponentiation_specifier(input) -> VariablePart:
-    if input[0] == 'prime':
-        return VariablePart('prime', '')
-    input_length = len(input)
-    if input_length == 1:
-        word = EXPONENTIATION_SPECIFIER[input[0]]
-    else:
-        word = str(input.ordinals)
-    return VariablePart('exponentiation', word)
-    
 
 
 variable_start_symbols = {
