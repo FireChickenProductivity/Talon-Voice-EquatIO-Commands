@@ -15,8 +15,8 @@ limit: 'lim_'
     edit.left()
     repeat(1)
 
-[<user.equatio_prefix_number>] <user.equatio_definite_or_indefinite_integral> (with|of) [respect to] <user.equatio_simple_variable_text>:
-    user.equatio_multi_integral_with_variable(equatio_prefix_number or 1, equatio_simple_variable_text, equatio_definite_or_indefinite_integral)
+[<user.equatio_prefix_number>] <user.equatio_definite_or_indefinite_integral> (with|of) [respect to] <user.equatio_simple_variable_text>+:
+    user.equatio_multi_integral_with_variable(equatio_prefix_number or 1, equatio_simple_variable_text_list, equatio_definite_or_indefinite_integral)
 
 #differentiation
 prime: "'"
