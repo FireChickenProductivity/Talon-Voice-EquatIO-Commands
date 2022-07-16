@@ -245,6 +245,8 @@ column (a small positive integer): creates a column surrounded by square bracket
 
 matrix column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time. Note that the matrix navigation commands will treat each column as its own matrix.
 
+By dictating the name of a matrix container in one of those commands before the first positive integer, those commands will use that container in place of the standard square brackets. Options currently include pipe or bar for vertical lines, pipes or bars for double vertical lines, brace for curly braces, paren for parentheses, and square or bracket for the standard square brackets.
+
 <h2>Navigating Matrices</h2>
 The following movement commands assume that the cursor is within a matrix entry and not within another text container.
 
