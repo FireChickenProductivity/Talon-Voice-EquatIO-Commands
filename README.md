@@ -205,7 +205,22 @@ triple integrate: produces a triple integral with the cursor at the first integr
 
 (integrate or integration or integral or from) line: produces a vertical dashed line with a subscript and superscript to denote from the subscript value to the superscript value (it would be better to produce a line that was not dashed, which is conventional, but EquatIO does not currently provide that capability). The cursor starts out within the subscript.
 
+<h3>Differentiation</h3>
+prime: creates the prime symbol. If used immediately after something that will be automatically subscripted, then the prime symbol will be created within the subscript.
 
+partial or part: creates the partial differential symbol.
+
+derive: types out d/d.
+
+derive [order or by] (small positive integer): similar to derive but raises each d to the power of the small positive integer.
+
+derive [order or by] (small positive integer) of (letter): similar to the command above but puts the letter after the second d and then exits the fraction.
+
+(partial or part) (derive or drive or rive): similar to derive but produces the partial differential symbol instead of the d's.
+
+(partial or part) (derive or drive or rive) [order or by] (small positive integer): similar to the above command but exponentiates the partial differential symbols by the small positive integer.
+
+(partial or part) (derive or drive or rive) [order or by] (small positive engager) of (letter): similar to the above command but puts the letter after the second partial differential symbol and then exits the fraction.
 
 # Trigonometry Commands
 tangent or tan: tan
