@@ -21,28 +21,31 @@ class Actions:
         actions.edit.line_start()
         actions.edit.right()
     #method currently untested with position_right = True
-    def equatio_multi_integral_with_variable(num_integrals: int = 1, variable: str = 'x',position_right: bool = False):
+    def equatio_multi_integral_with_variable(num_integrals: int = 1, variable: str = 'x', integral_type: IntegralType = IntegralType.DEFINITE):
         '''insert multiple intergral signs and positions cursor followed by ()d variable(defaults to x)'''
         actions.insert('(')
         insert_string = '()d' + variable
         actions.insert(insert_string)
         actions.key('home')
         actions.edit.delete()
-        actions.user.equatio_multi_integral(num_integrals , position_right)
+        actions.user.equatio_multi_integral(num_integrals, integral_type)
+        if should_move_cursor_to_the_right_of_the_integral(integral_type):
+            actions.edit.right()
 
     def equatio_multi_integral(num_integrals: int = 1, integral_type: IntegralType = IntegralType.DEFINITE):
         '''insert multiple intergral signs and positions cursor'''
-        position_right = integral_type == IntegralType.INDEFINITE
         for i in range(num_integrals):
             actions.insert('\\int ')
             actions.key('left:1')
 
-        if position_right:
+        if should_move_cursor_to_the_right_of_the_integral(integral_type):
             shift_right = 'right:' + str(3*num_integrals)
         else:
             shift_right = 'right:1'
         actions.key(shift_right)
-    
+
+def should_move_cursor_to_the_right_of_the_integral(type):
+    return type == IntegralType.INDEFINITE
 
 @module.capture(rule = 'dub|double|triple')
 def equatio_prefix_number(input) -> int:
