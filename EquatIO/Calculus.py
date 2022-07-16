@@ -21,11 +21,11 @@ class Actions:
         actions.edit.line_start()
         actions.edit.right()
     #method currently untested with position_right = True
-    def equatio_multi_integral_with_variable(num_integrals: int = 1, variable: str = 'x', integral_type: IntegralType = IntegralType.DEFINITE):
+    def equatio_multi_integral_with_variable(num_integrals: int, variables: list, integral_type: IntegralType = IntegralType.DEFINITE):
         '''insert multiple intergral signs and positions cursor followed by ()d variable(defaults to x)'''
         actions.insert('(')
-        insert_string = '()d' + variable
-        actions.insert(insert_string)
+        actions.insert('()d')
+        actions.insert('d'.join(variables))
         actions.key('home')
         actions.edit.delete()
         actions.user.equatio_multi_integral(num_integrals, integral_type)
