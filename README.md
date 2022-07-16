@@ -237,3 +237,11 @@ cotangent: cot
 
 degrees: creates the degrees symbol
 
+# Matrix Commands
+<h2>Making Matrices</h2>
+matrix (small positive integer) [by] (small positive integer): creates a matrix surrounded by square brackets with the number of rows specified by the first integer and the number of columns specified by the second integer.
+
+column (a small positive integer): creates a column surrounded by square brackets with the number of rows given by the integer.
+
+matrix column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time.
+
