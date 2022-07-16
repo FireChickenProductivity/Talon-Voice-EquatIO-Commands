@@ -201,9 +201,9 @@ integrate: produces an integral symbol and leaves the cursor at the integral's l
 
 integral: produces an integral symbol and moves the cursor to the right of it.
 
-dubintegrate: produces a double integral with the cursor at the first integral's lower bound.
+[(dub or double or triple)] (integrate or integral): the first part determines the number of integrals. If the first part is ignored, the command produces a single integral. If the first part is dub or double, the command produces a double integral. If the first part is triple, the command produces a triple integral. The second part determines whether the cursor should move to the right of the integrals or will be placed at the first integral's lower bound. Integral means moving to the right while integrate means moving to the first integral's lower bound.
 
-triple integrate: produces a triple integral with the cursor at the first integral's lower bound.
+[(dub or double or triple)] (integrate or integral) (with or of) [respect to] (a list of letters): the same as the previous command but puts parentheses followed by the list of letters with d before each letter after the integrals.
 
 (integrate or integration or integral or from) line: produces a vertical dashed line with a subscript and superscript to denote from the subscript value to the superscript value (it would be better to produce a line that was not dashed, which is conventional, but EquatIO does not currently provide that capability). The cursor starts out within the subscript.
 
