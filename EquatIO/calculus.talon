@@ -6,14 +6,10 @@ goes to: '\\to '
 limit: 'lim_'
 
 #integration
-integrate: '\\int '
-dubintegrate:
-    user.equatio_multi_integral(2)
-triple integrate:
-    user.equatio_multi_integral(3)
-integral:
-    insert('\\int ')
-    key(right:2)
+
+[<user.equatio_prefix_number>] <user.equatio_definite_or_indefinite_integral>:
+    user.equatio_multi_integral(equatio_prefix_number or 1, equatio_definite_or_indefinite_integral)
+
 (integrate|integration|integral|from) line: 
     user.equatio_paste_text('\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\stackrel{{\\mid }}{{\\ }}}}}}_{{ }}^{{ }}')
     edit.left()
