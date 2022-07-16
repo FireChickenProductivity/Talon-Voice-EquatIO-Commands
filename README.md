@@ -7,7 +7,9 @@ Capital english and greek letters can be dictated with Tall (letter) or Big (let
 
 Because capital delta is more common in math than lower case delta, dictating delta produces upper case delta. Lower case delta is dictated as small delta.
 
-Positive integers and letters dictated immediately after any letter other then capital delta are automatically subscripted.
+Positive integers and letters dictated immediately after any letter other than capital delta are automatically subscripted.
+
+Positive integers and letters dictated immediately after any exponent dictated immediately after any letter other than capital delta are also automatically subscripted.
 
 Dictating flat or straight before dictating letters prevents automatic subscripting after them.
 
