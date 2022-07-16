@@ -29,7 +29,7 @@ class Actions:
         actions.key('home')
         actions.edit.delete()
         actions.user.equatio_multi_integral(num_integrals , position_right)
-    #method currently untested with position_right = True
+
     def equatio_multi_integral(num_integrals: int = 1, integral_type: IntegralType = IntegralType.DEFINITE):
         '''insert multiple intergral signs and positions cursor'''
         position_right = integral_type == IntegralType.INDEFINITE
