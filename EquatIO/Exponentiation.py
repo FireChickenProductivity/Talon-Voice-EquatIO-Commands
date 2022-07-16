@@ -32,4 +32,7 @@ class Actions:
     def equatio_exponentiation(exponent: VariablePart):
         '''Inputs the specified exponent into equatio'''
         actions.user.equatio_exponentiate_text(exponent.text)
-
+    def equatio_exponentiate_text(exponent: str):
+        '''Performs the desired exponentiation'''
+        actions.insert('^' + exponent)
+        actions.edit.right()
