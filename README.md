@@ -258,3 +258,11 @@ The following movement commands assume that the cursor is within a matrix entry 
 
 [go or move or matrix] (previous or back): goes to the previous entry of the matrix.
 
+<h2>Miscellaneous</h2>
+new column: creates a new column if within matrix.
+
+leave matrix left: leaves the matrix and goes to the left.
+
+leave matrix right: leaves the matrix and goes to the right. Unfortunately, this command only moves to the right of the innermost container of the matrix, so using this command with a matrix with multiple containers (such as multiple parentheses, lines, or square brackets) does not completely get you out of the matrix.
+
+send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly).
