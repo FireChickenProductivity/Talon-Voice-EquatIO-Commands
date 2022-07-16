@@ -243,5 +243,18 @@ matrix (small positive integer) [by] (small positive integer): creates a matrix 
 
 column (a small positive integer): creates a column surrounded by square brackets with the number of rows given by the integer.
 
-matrix column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time.
+matrix column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time. Note that the matrix navigation commands will treat each column as its own matrix.
+
+<h2>Navigating Matrices</h2>
+The following movement commands assume that the cursor is within a matrix entry and not within another text container.
+
+[go or move or matrix] entry (a small positive integer) (a small positive integer): goes to the entry at the row specified by the first positive integer and the column given by the second positive integer.
+
+[go or move or matrix] first entry: goes to the first entry of the matrix.
+
+[go or move or matrix] last entry: goes to the last entry of the matrix.
+
+[go or move or matrix] next entry: goes to the next entry of the matrix.
+
+[go or move or matrix] (previous or back): goes to the previous entry of the matrix.
 
