@@ -22,6 +22,11 @@ class Actions:
         matrix_text += boundary[1]
         actions.user.equatio_paste_text(matrix_text)
         go_to_matrix_first_entry_from_matrix_right()
+    def equatio_build_matrix_augment(rows: int, columns: int):
+        '''Builds a matrix augment with specified dimensions'''
+        make_augment_line_with_height(rows)
+        paste_empty_matrix(rows, columns)
+        go_to_empty_matrix_first_entry_from_right_but_within_container(rows, columns)
     def equatio_build_column_matrix_with_square_boundary(rows: int, columns: int):
         '''Builds a matrix out of columns with square boundaries'''
         actions.user.equatio_build_column_matrix_with_boundary(equatio_matrix_boundary(['square']), rows, columns)
@@ -82,10 +87,25 @@ def empty_matrix_text(rows, columns):
     EmptyMatrix = Matrix(rows, columns)
     return EmptyMatrix.text()
 
+def paste_empty_matrix(rows, columns):
+    matrix_text = empty_matrix_text(rows, columns)
+    actions.user.equatio_paste_text(matrix_text)
+
+def make_augment_line_with_height(height):
+    AugmentLineMatrix = Matrix(height, 1)
+    AugmentLineMatrix.fill_with_text('\\mid')
+    actions.user.equatio_paste_text(AugmentLineMatrix.text())
+
 def go_to_matrix_first_entry_from_matrix_right():
     actions.key('left')
     actions.key('home')
     actions.key('right')
+
+def go_to_empty_matrix_first_entry_from_right_but_within_container(rows, columns):
+    for column in range(columns):
+        actions.edit.left()
+    for row in range(rows):
+        actions.edit.up()
 
 def go_to_matrix_first_entry():
     select_current_matrix()
@@ -158,7 +178,10 @@ class Matrix:
         self.matrix[(row, column)] = value
     def entry(self, row, column):
         return self.matrix[row, column]
-
+    def fill_with_text(self,fill_value):
+        for row in range(1, self.num_rows + 1):
+            for column in range(1, self.num_columns + 1):
+                self.update(row, column, fill_value)
     def text(self):
         output = Matrix.BEGINNING_TEXT
         for row in range(1,self.num_rows +1):
