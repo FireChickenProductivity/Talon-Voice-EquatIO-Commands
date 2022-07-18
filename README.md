@@ -7,11 +7,24 @@ Capital english and greek letters can be dictated with Tall (letter) or Big (let
 
 Because capital delta is more common in math than lower case delta, dictating delta produces upper case delta. Lower case delta is dictated as small delta.
 
-Positive integers and letters dictated immediately after any letter other than capital delta are automatically subscripted.
+There are three subscripting settings: automatic, automatic numbers, and manual. Regardless of which setting is active, dictating flat or straight before dictating letters prevents automatic subscripting of letters after them.
 
-Positive integers and letters dictated immediately after any exponent dictated immediately after any letter other than capital delta are also automatically subscripted.
+<h2>Automatic Subscript Setting Rules</h2>
 
-Dictating flat or straight before dictating letters prevents automatic subscripting after them.
+Positive integers and letters dictated immediately after the dictation of any letter other than capital delta are automatically subscripted.
+
+Positive integers and letters dictated immediately after any exponent dictated immediately after the dictation of any letter other than capital delta are also automatically subscripted.
+
+<h2>Automatic Numbers Subscript Setting Rules</h2>
+Positive integers dictated immediately after the dictation of any letter or exponent are automatically subscripted.
+
+<h2>Manual Subscript Setting</h2>
+No automatic subscripting
+
+<h2>Changing the Subscript Setting</h2>
+The active subscript setting can be changed by dictating "subscript setting" followed by the desired subscript setting name. The word auto can be used instead of automatic (so you can say subscript setting auto and subscript setting auto numbers).
+
+The default subscript setting upon launching talon can be changed by changing the user.equatio_default_subscript_setting in the settings.talon file. To do this, go to the setting in the file and change the text in single quotation marks to the name of the desired mode in all lower case.
 
 # Exponentiation
 Dictating squared raises the previous character to the second power.
