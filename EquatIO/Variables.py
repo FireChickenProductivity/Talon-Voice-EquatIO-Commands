@@ -27,7 +27,9 @@ class Actions:
             return 
         for element in symbol_list:
             if element.type == 'number or letter' and element.text.isnumeric():
-                insert_subscript(element.text)
+                insert_subscript_and_stay_down(element.text)
+                actions.edit.extend_right()
+                actions.edit.right()
             else:
                 actions.user.insert_equatio_symbol_list([element])
     def equatio_insert_variable_with_subscript(variable_start: VariablePart, variable_subscript: list):
@@ -143,6 +145,10 @@ def get_variable_word(input, capitalized):
     else:
         return input[0]
 
+
 def insert_subscript(text):
-    actions.insert('_' + text)
+    insert_subscript_and_stay_down(text)
     actions.edit.right()
+
+def insert_subscript_and_stay_down(text):
+    actions.insert('_' + text)
