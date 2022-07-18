@@ -36,6 +36,16 @@ class Actions:
         actions.insert('_')
         actions.user.insert_equatio_symbol_list(variable_subscript)
         actions.key('right')
+    def equatio_insert_simple_variable_list(variables: list):
+        '''Inserts the specified simple variables if given a list of simple variable strings'''
+        for variable in variables:
+            actions.insert(variable)
+    def equatio_subscript_list(subscript_list: list):
+        '''Inserts the specified list as a subscript'''
+        subscript_text = ''
+        for item in subscript_list:
+            subscript_text += str(item)
+        insert_subscript(subscript_text)
 
 
 
