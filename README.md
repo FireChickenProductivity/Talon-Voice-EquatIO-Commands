@@ -15,7 +15,7 @@ Positive integers and letters dictated immediately after the dictation of any le
 
 Positive integers and letters dictated immediately after any exponent dictated immediately after the dictation of any letter other than capital delta are also automatically subscripted.
 
-<h2>Automatic Numbers Subscript Setting Rules</h2>
+<h2>Automatic Numbers Subscript Setting Rules (this setting currently has some bugs, which I will try to fix by 7/20/2022)</h2>
 Positive integers dictated immediately after the dictation of any letter or exponent are automatically subscripted.
 
 <h2>Manual Subscript Setting</h2>
