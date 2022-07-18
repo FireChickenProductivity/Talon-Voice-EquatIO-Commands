@@ -249,6 +249,10 @@ matrix column (small positive integer) [by] (small positive integer): creates a 
 
 By dictating the name of a matrix container in one of those commands before the first positive integer, those commands will use that container in place of the standard square brackets. Options currently include pipe or bar for vertical lines, pipes or bars for double vertical lines, brace for curly braces, paren for parentheses, and square or bracket for the standard square brackets.
 
+[matrix] augment (small positive integer) [by] (small positive integer): augments the current matrix with an empty additional matrix with the specified dimensions. Assumes that the cursor is to the right of the matrix to augment but within its container (the container is the stuff around the matrix, such as square brackets, parentheses, etc). The first integer gives the number of rows and the second integer gives the number of columns.
+
+[matrix] augment (small positive integer): same as the previous command but uses 1 as the number of columns.
+
 <h2>Navigating Matrices</h2>
 The following movement commands assume that the cursor is within a matrix entry and not within another text container.
 
