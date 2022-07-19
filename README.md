@@ -57,6 +57,21 @@ out: goes to the end of the current line and then to the right. Useful for thing
 
 move: goes to the end of the current line.
 
+<h2>Movement With Operator Commands</h2>
+The following commands move to the right and input the specified symbol:
+
+rush: +
+
+rine: -
+
+rhyme or rhymes: *
+
+ross: the cross multiplication sign
+
+rash: /
+
+reek or re quill or reeks or re quills or requal or requals: =
+
 # Symbol Commands
 stuff in square brackets is optional
 
