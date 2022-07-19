@@ -302,3 +302,15 @@ leave matrix left: leaves the matrix and goes to the left.
 leave matrix right: leaves the matrix and goes to the right. Unfortunately, this command only moves to the right of the innermost container of the matrix, so using this command with a matrix with multiple containers (such as multiple parentheses, lines, or square brackets) does not completely get you out of the matrix.
 
 send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly).
+
+
+# Settings
+Settings can be adjusted in the settings.talon file.
+
+The user.equatio_selection_delay setting determines how long in milliseconds commands will pause after selecting text. Try increasing this if commands that select text are not working.
+
+The user.equatio_clipboard_operation_delay setting determines how long in milliseconds commands will pause when using the clipboard. Try increasing this if commands that use the clipboard are not working.
+
+The user.equatio_movement_delay setting determines how long in milliseconds commands will pause after performing certain kinds of movements. If some commands involving movement do not work, try increasing this.
+
+The user.equatio_default_subscript_setting setting is described above in the discussion of subscript settings.
