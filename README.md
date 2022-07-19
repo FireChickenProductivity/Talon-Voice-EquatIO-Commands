@@ -7,7 +7,7 @@ Capital english and greek letters can be dictated with Tall (letter) or Big (let
 
 Because capital delta is more common in math than lower case delta, dictating delta produces upper case delta. Lower case delta is dictated as small delta.
 
-There are three subscripting settings: automatic, automatic numbers, and manual. Regardless of which setting is active, dictating flat or straight before dictating letters prevents automatic subscripting of letters after them.
+There are three subscripting settings: automatic, automatic numbers, and manual. Regardless of which setting is active, dictating flat or straight before dictating letters prevents automatic subscripting of letters after them but will subscript subsequent numbers (including numbers immediately after exponentiation that was dictated immediately after letters).
 
 <h2>Automatic Subscript Setting Rules</h2>
 
@@ -16,7 +16,7 @@ Positive integers and letters dictated immediately after the dictation of any le
 Positive integers and letters dictated immediately after any exponent dictated immediately after the dictation of any letter other than capital delta are also automatically subscripted.
 
 <h2>Automatic Numbers Subscript Setting Rules</h2>
-Positive integers dictated immediately after the dictation of any letter or exponent are automatically subscripted.
+Positive integers dictated immediately after the dictation of any letter or after any exponent dictated immediately after any letter are automatically subscripted.
 
 <h2>Manual Subscript Setting</h2>
 No automatic subscripting
