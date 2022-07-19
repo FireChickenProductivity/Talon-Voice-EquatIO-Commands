@@ -19,3 +19,30 @@ cape:
 
 (back|shift) cape:
     key(shift-escape)
+    
+
+#movement and operator commands
+rush:
+    edit.right()
+    insert('+')
+
+rine:
+    edit.right()
+    insert('-')
+
+rhyme|rhymes:
+    edit.right()
+    insert('*')
+ross:
+    edit.right()
+    insert('\\times ')
+
+
+rash:
+    edit.right()
+    insert('/')
+
+reek|re quill|reeks|re quills|requal|requals:
+    edit.right()
+    insert('=')
+
