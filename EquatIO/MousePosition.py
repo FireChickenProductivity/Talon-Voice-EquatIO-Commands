@@ -53,6 +53,7 @@ class MousePositionFile:
         self.folder = folder
         self.name = name
         self._initialize_file_if_nonexistent()
+        self.position = self._retrieve_position()
         
     def get(self):
         return self.position
@@ -63,11 +64,13 @@ class MousePositionFile:
     
     def set_to_current_mouse_position(self):
         horizontal, vertical = ctrl.mouse_pos()
-        self.set(MousePosition(horizontal, vertical))
+        position = MousePosition(horizontal, vertical)
+        self.set(position)
     
     def _store_position(self):
         with open(self.get_path(), 'w') as position_file:
-            position_file.write(str(self.position))
+            position_text = str(self.position)
+            position_file.write(position_text)
     
     def _retrieve_position(self):
         with open(self.get_path, 'r') as position_file:
