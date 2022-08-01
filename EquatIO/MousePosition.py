@@ -1,4 +1,4 @@
-from talon import ctrl
+from talon import ctrl, actions
 import os
 
 class MousePosition:
@@ -33,6 +33,9 @@ class MousePosition:
         self.vertical -= other.vertical
         return self
 
+    def go(self):
+        actions.mouse_move(self.horizontal, self.vertical)
+
     def __str__(self) -> str:
         return MousePosition.STRING_START + str(self.horizontal) + MousePosition.COORDINATE_SEPARATOR \
         + str(self.vertical) + MousePosition.STRING_ENDING
@@ -53,7 +56,7 @@ class MousePositionFile:
         self.folder = folder
         self.name = name
         self._initialize_file_if_nonexistent()
-        self.position = self._retrieve_position()
+        self._retrieve_position()
         
     def get(self):
         return self.position
@@ -73,7 +76,7 @@ class MousePositionFile:
             position_file.write(position_text)
     
     def _retrieve_position(self):
-        with open(self.get_path, 'r') as position_file:
+        with open(self.get_path(), 'r') as position_file:
             position_text = position_file.readline().rstrip('\n\r')
             self.position = MousePosition.from_text(position_text)
     
