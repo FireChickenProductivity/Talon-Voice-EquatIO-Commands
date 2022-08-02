@@ -52,12 +52,26 @@ class Actions:
         return_to_math()
         wait_click_delay()
         actions.edit.select_all()
+    
+    def equatio_insert_saved_word_math():
+        '''Inserts the math into word and saves it'''
+        position = get_insert_math_position()
+        click_position(position)
+        actions.user.switcher_focus('word')
+        wait_insert_delay()
+        actions.edit.save()
+        return_to_math()
+        wait_click_delay()
+        actions.edit.select_all()
 
 def wait_insert_delay():
     wait_delay(insert_delay)
 
 def wait_delay(setting):
-    actions.sleep(f'{setting.get()}ms')
+    wait_milliseconds(setting.get())
+
+def wait_milliseconds(time: int):
+    actions.sleep(f'{time}ms')
 
 def wait_click_delay():
     wait_delay(click_delay)
