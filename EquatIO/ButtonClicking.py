@@ -33,6 +33,14 @@ insert_delay = module.setting(
     ' Increase this if math insertion commands are not working properly but the insert math button is getting properly clicked.',
 )
 
+edit_delay = module.setting(
+    'equatio_edit_delay',
+    type = int,
+    default = 2000,
+    desc = 'How long to wait after clicking the edit math button.'
+    ' Increase this if math edit commands are not working properly but the edit math button is getting properly clicked.',
+)
+
 @module.action_class
 class Actions:
     def equatio_update_insert_math_position():
@@ -78,6 +86,9 @@ class Actions:
         '''Click the edit math button'''
         position = get_edit_math_position()
         click_position(position)
+        wait_edit_delay()
+        return_to_math()
+
     
     def equatio_click_equation_editor():
         '''Clicks the equation editor'''
@@ -95,6 +106,9 @@ def wait_milliseconds(time: int):
 
 def wait_click_delay():
     wait_delay(click_delay)
+
+def wait_edit_delay():
+    wait_delay(edit_delay)
 
 def get_insert_math_position():
     return get_position_from_name('insert math')
