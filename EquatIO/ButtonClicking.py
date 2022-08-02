@@ -14,7 +14,7 @@ module = Module()
 mouse_movement_delay = module.setting(
     'equatio_mouse_movement_delay',
     type = int,
-    default = 0,
+    default = 500,
     desc = 'How long to pause after moving the mouse for equatio commands. Increase this if button clicking is not working for you.',
 )
 
@@ -44,6 +44,16 @@ class Actions:
         position = get_return_position()
         position.set_to_current_mouse_position()
 
+    def equatio_update_edit_math_position():
+        '''Stores the current mouse position as the location of the edit math button'''
+        position = get_edit_math_position()
+        position.set_to_current_mouse_position()
+
+    def equatio_update_equation_editor_position():
+        '''Stores the current mouse position as the location of the equation editor button'''
+        position = get_equation_editor_position()
+        position.set_to_current_mouse_position()
+
     def equatio_insert_math():
         '''Inserts the math'''
         position = get_insert_math_position()
@@ -63,6 +73,16 @@ class Actions:
         return_to_math()
         wait_click_delay()
         actions.edit.select_all()
+
+    def equatio_edit_math():
+        '''Click the edit math button'''
+        position = get_edit_math_position()
+        click_position(position)
+    
+    def equatio_click_equation_editor():
+        '''Clicks the equation editor'''
+        position = get_equation_editor_position()
+        click_position(position)
 
 def wait_insert_delay():
     wait_delay(insert_delay)
@@ -85,6 +105,12 @@ def get_position_from_name(name: str):
 # This is used to return to editing math
 def get_return_position():
     return get_position_from_name('return')
+
+def get_edit_math_position():
+    return get_position_from_name('edit math')
+
+def get_equation_editor_position():
+    return get_position_from_name('equation editor')
 
 def click_position(position_file: MousePositionFile):
     position = position_file.get()
