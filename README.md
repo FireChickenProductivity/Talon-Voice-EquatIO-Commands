@@ -328,6 +328,6 @@ The user.equatio_default_subscript_setting setting is described above in the dis
 The user.equatio_mouse_movement_delay setting determines how long in milliseconds commands should pause after moving the mouse. Try increasing this if any mouse commands are not working.
 
 
-The user.equatio_click_delay setting determines how long in milliseconds commands should pause after clicking to give time for the application to finish processing the click. If a mouse command does something too soon after clicking for it to work, try increasing this.
+The user.equatio_click_delay setting determines how long in milliseconds certain commands will pause after clicking to give time for the application to finish processing the click. If a mouse command does something too soon after clicking for it to work, try increasing this.
 
 The user.equatio_insert_delay setting determines how long to wait in milliseconds for equatio to finish inserting math. If any commands do not wait long enough for equatio to finish inputting math to work properly, try increasing this.
