@@ -303,6 +303,15 @@ leave matrix right: leaves the matrix and goes to the right. Unfortunately, this
 
 send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly).
 
+# Button Usage
+
+This set up includes commands for pressing buttons provided that the user runs commands that will tell it where the buttons are. Dictating "update insert math" will tell the system that the insert math button is located at the cursor's current position. Dictating "update math return" will tell the system that the cursor's current position is the position to click on to return to editing math.
+
+The following commands can be used after the mouse positions are properly configured:
+
+Dictating "insert math" will click the insert math button, then click back into the editor, and then select the text.
+
+Dictating "math save" will perform the same actions as the insert math command but will also switch to the word document that the math is being inserted into and save the math after it gets inserted before clicking back into the editor.
 
 # Settings
 Settings can be adjusted in the settings.talon file.
