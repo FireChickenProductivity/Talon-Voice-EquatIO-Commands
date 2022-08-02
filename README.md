@@ -305,13 +305,17 @@ send (a list of symbols that can be small integers, minus signs, or decimal poin
 
 # Button Usage
 
-This set up includes commands for pressing buttons provided that the user runs commands that will tell it where the buttons are. Dictating "update insert math" will tell the system that the insert math button is located at the cursor's current position. Dictating "update math return" will tell the system that the cursor's current position is the position to click on to return to editing math.
+This set up includes commands for pressing buttons provided that the user runs commands that will tell it where the buttons are. Dictating "update insert math" will tell the system that the insert math button is located at the cursor's current position. Dictating "update math return" will tell the system that the cursor's current position is the position to click on to return to editing math. Dictating "update equation editor" tells the system that the cursor's current position is the position to click on to toggle the equation editor. Dictating "update edit math" tells the system that the cursor's current position is the position of the edit math button.
 
 The following commands can be used after the mouse positions are properly configured:
 
 Dictating "insert math" will click the insert math button, then click back into the editor, and then select the text.
 
 Dictating "math save" will perform the same actions as the insert math command but will also switch to the word document that the math is being inserted into and save the math after it gets inserted before clicking back into the editor.
+
+Dictating "equatio edit" will click the edit math button and then, after a pause, click back into the editor. This command can be used even when equatio is not the current application or is even not running.
+
+Dictating "equatio editor" or "equatio equation editor" will click the equation editor button. This command can be used even when equatio is not the current application or is even not running.
 
 # Settings
 Settings can be adjusted in the settings.talon file.
@@ -331,3 +335,4 @@ The user.equatio_mouse_movement_delay setting determines how long in millisecond
 The user.equatio_click_delay setting determines how long in milliseconds certain commands will pause after clicking to give time for the application to finish processing the click. If a mouse command does something too soon after clicking for it to work, try increasing this.
 
 The user.equatio_insert_delay setting determines how long to wait in milliseconds for equatio to finish inserting math. If any commands do not wait long enough for equatio to finish inputting math to work properly, try increasing this.
+
