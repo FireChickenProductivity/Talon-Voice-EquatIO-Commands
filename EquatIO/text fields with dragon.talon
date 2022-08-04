@@ -1,13 +1,8 @@
 speech.engine: dragon
-mode: all
+mode: command
 app: EquatIO
 -
-^text field$:
+^Dragon text$:
 	insert('\\text ')
 	user.dragon_mode()
-
-^finish$:
-	key(escape)
-	user.talon_mode()
-
 
