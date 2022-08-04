@@ -94,6 +94,11 @@ class Actions:
         '''Clicks the equation editor'''
         position = get_equation_editor_position()
         click_position(position)
+    
+    def equatio_return_math():
+        '''Clicks on the return math position'''
+        position = get_return_position()
+        click_position(position)
 
 def wait_insert_delay():
     wait_delay(insert_delay)
