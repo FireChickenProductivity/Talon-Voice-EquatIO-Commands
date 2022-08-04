@@ -1,6 +1,5 @@
 app: EquatIO
 -
-text: '\\text '
 
 plus: '+'
 negative: '-'
