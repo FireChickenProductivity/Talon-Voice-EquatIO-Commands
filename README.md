@@ -323,6 +323,19 @@ Dictating "math return" will click the math return position even if equatio is n
 
 To switch to the desmos calculator (or another browser based calculator) currently open, use the update desmos command to configure the mouse position to click on to make the calculator app active and configure the equatio_desmos_browser setting so that the knausj focus action can bring up your desired browser. Then use the desmos command from equatio.
 
+# Text Field Commands
+text: creates a text field
+
+text dictate: creates a text field and switches to dictation mode
+
+text window: creates a text field, switches to dictation mode, and opens the draft window
+
+finish: if in equatio and dictation mode, switches to command mode and exits the text field. If using the dragon speech engine with talon in equatio and not in command mode, the command switches to talon mode and exits the text field. This command is anchored (cannot be chained with other commands).
+
+Dragon text: if using the dragon speech engine with talon, this will insert a text field and activate dragon mode. This command is anchored (cannot be chained).
+
+
+
 # Settings
 Settings can be adjusted in the settings.talon file.
 
