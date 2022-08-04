@@ -10,3 +10,5 @@ settings():
     user.equatio_click_delay = 200
     user.equatio_insert_delay = 4000
     user.equatio_edit_delay = 2000
+
+    user.equatio_desmos_browser = 'edge'
