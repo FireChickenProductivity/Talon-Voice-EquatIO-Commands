@@ -41,6 +41,13 @@ edit_delay = module.setting(
     ' Increase this if math edit commands are not working properly but the edit math button is getting properly clicked.',
 )
 
+desmos_browser = module.setting(
+    'equatio_desmos_browser',
+    type = str,
+    default = 'edge',
+    desc = 'Used with the knausj focus action to try to bring up the browser with desmos'
+)
+
 @module.action_class
 class Actions:
     def equatio_update_insert_math_position():
@@ -61,6 +68,12 @@ class Actions:
         '''Stores the current mouse position as the location of the equation editor button'''
         position = get_equation_editor_position()
         position.set_to_current_mouse_position()
+    
+    def equatio_update_desmos_position():
+        '''Stores the current mouse position as the place to click when returning to the desmos calculator'''
+        position = get_desmos_position()
+        position.set_to_current_mouse_position()
+
 
     def equatio_insert_math():
         '''Inserts the math'''
@@ -99,6 +112,15 @@ class Actions:
         '''Clicks on the return math position'''
         position = get_return_position()
         click_position(position)
+    
+    def equatio_switch_to_desmos():
+        '''Brings up the desmos calculator in the configured browser'''
+        focus_desmos_browser()
+        position = get_desmos_position()
+        click_position(position)
+
+def focus_desmos_browser():
+    actions.user.switcher_focus(desmos_browser.get())
 
 def wait_insert_delay():
     wait_delay(insert_delay)
@@ -130,6 +152,9 @@ def get_edit_math_position():
 
 def get_equation_editor_position():
     return get_position_from_name('equation editor')
+
+def get_desmos_position():
+    return get_position_from_name('desmos')
 
 def click_position(position_file: MousePositionFile):
     position = position_file.get()
