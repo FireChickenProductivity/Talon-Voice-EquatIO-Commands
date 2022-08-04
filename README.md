@@ -319,6 +319,10 @@ Dictating "equatio editor" or "equatio equation editor" will click the equation 
 
 Dictating "math return" will click the math return position even if equatio is not the current application or not running.
 
+# Switching to Desmos Calculator
+
+To switch to the desmos calculator (or another browser based calculator) currently open, use the update desmos command to configure the mouse position to click on to make the calculator app active and configure the equatio_desmos_browser setting so that the knausj focus action can bring up your desired browser. Then use the desmos command from equatio.
+
 # Settings
 Settings can be adjusted in the settings.talon file.
 
@@ -329,6 +333,8 @@ The user.equatio_clipboard_operation_delay setting determines how long in millis
 The user.equatio_movement_delay setting determines how long in milliseconds commands will pause after performing certain kinds of movements. If some commands involving movement do not work, try increasing this.
 
 The user.equatio_default_subscript_setting setting is described above in the discussion of subscript settings.
+
+The user.equatio_desmos_browser setting determines which browser the desmos command will switch to. The setting should give a name that the knausj focus action can recognize.
 
 <h2>Button Usage Delay Settings</h2>
 The user.equatio_mouse_movement_delay setting determines how long in milliseconds commands should pause after moving the mouse. Try increasing this if any mouse commands are not working.
