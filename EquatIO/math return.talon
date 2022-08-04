@@ -1,2 +1,2 @@
 -
-return math: user.equatio_return_math()
+math return: user.equatio_return_math()
