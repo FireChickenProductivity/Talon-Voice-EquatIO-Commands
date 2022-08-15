@@ -4,6 +4,17 @@ from .EquatIO import *
 
 #todo: Clean the considerable repetition in this file
 module = Module()
+individual_selection_delay = module.setting(
+    'equatio_individual_selection_delay',
+    type = int,
+    default = 10,
+    desc = "How long to delay when selecting a single character in milliseconds."
+    "Increase this if individual selection is not working."
+)
+def wait_for_individual_selection_delay():
+    actions.sleep(f'{individual_selection_delay.get()}ms')
+
+
 @module.action_class
 class Actions:
 
@@ -29,6 +40,7 @@ class Actions:
             actions.edit.right()
             for i in range(distance):
                 actions.edit.extend_left()
+                wait_for_individual_selection_delay()
         except ValueError:
             actions.edit.extend_line_start()
  
@@ -53,6 +65,7 @@ class Actions:
             actions.edit.left()
             for i in range(distance):
                 actions.edit.extend_right()
+                wait_for_individual_selection_delay()
         except ValueError:
             actions.edit.extend_line_end()
 
