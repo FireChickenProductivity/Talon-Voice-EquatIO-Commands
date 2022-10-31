@@ -73,6 +73,9 @@ secant: 'sec'
 cosecant: 'csc'
 cotangent: 'cot'
 
+log: 'log'
+L G: 'lg'
+
 parallel: '\\parallel '
 (perpendicular|normal): '\\perpendicular '
 therefore: '\\therefore '
