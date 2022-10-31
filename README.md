@@ -267,6 +267,11 @@ cotangent: cot
 
 degrees: creates the degrees symbol
 
+# Logarithm Commands
+log: log
+
+L G: lg
+
 # Matrix Commands
 <h2>Making Matrices</h2>
 matrix (small positive integer) [by] (small positive integer): creates a matrix surrounded by square brackets with the number of rows specified by the first integer and the number of columns specified by the second integer.
