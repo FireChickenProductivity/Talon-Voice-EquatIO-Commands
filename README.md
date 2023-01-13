@@ -41,11 +41,15 @@ Dictating the above exponentiation commands immediately after something that wil
 
 Dictating power starts a superscript.
 
+Dictating poof starts a subscript in parentheses (poof is short for power of).
+
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
 
 # Movement Commands
 who: moves the cursor to the right.
+
+pass: moves the cursor to the right twice.
 
 back: moves the cursor to the left.
 
