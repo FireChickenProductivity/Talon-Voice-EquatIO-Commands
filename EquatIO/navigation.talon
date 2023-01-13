@@ -5,6 +5,12 @@ out:
     edit.line_end()
     edit.right()
 
+leave|leaf:
+    edit.line_end()
+    edit.right()
+    edit.line_end()
+    edit.right()
+
 move:
     edit.line_end()
 
