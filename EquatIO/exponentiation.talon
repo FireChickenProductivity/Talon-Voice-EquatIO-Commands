@@ -7,3 +7,7 @@ app: EquatIO
 
 power: '^'
 poof: '^('
+poof (transpose|pose):
+    insert('^()^T')
+    edit.left()
+    repeat(2)
