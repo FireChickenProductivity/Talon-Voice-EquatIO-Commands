@@ -14,6 +14,10 @@ back:
 who:
     edit.right()
 
+pass:
+    edit.right()
+    repeat(1)
+
 cape:
     key(escape)
 
