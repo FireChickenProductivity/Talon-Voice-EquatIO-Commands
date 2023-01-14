@@ -59,6 +59,8 @@ back cape or shift cape: presses shift escape, which usually exits the current t
 
 out: goes to the end of the current line and then to the right. Useful for things like exiting parentheses, subscripts, and superscripts.
 
+leave or leaf: does the same thing as out twice.
+
 move: goes to the end of the current line.
 
 <h2>Movement With Operator Commands</h2>
