@@ -7,6 +7,7 @@ app: EquatIO
 
 power: '^'
 poof: '^('
+puff <number_small>: user.equatio_exponentiate_parenthesized_number(number_small)
 poof (transpose|pose):
     insert('^()^T')
     edit.left()
