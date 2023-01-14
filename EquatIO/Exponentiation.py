@@ -36,3 +36,7 @@ class Actions:
         '''Performs the desired exponentiation'''
         actions.insert('^' + exponent)
         actions.edit.right()
+    def equatio_exponentiate_parenthesized_number(number: int):
+        '''Performs the exponentiation of the specified number in parentheses'''
+        number_string = str(number)
+        actions.user.equatio_exponentiate_text('(' + number_string + ')')
