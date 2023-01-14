@@ -40,3 +40,9 @@ class Actions:
         '''Performs the exponentiation of the specified number in parentheses'''
         number_string = str(number)
         actions.user.equatio_exponentiate_text('(' + number_string + ')')
+    def equatio_exponentiate_parenthesized_transposed_number(number: int):
+        '''Performs the exponentiation of the specified number in parentheses and transposed'''
+        number_string = str(number)
+        actions.insert(f'^({number_string})^T')
+        actions.edit.right()
+        actions.edit.right()
