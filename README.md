@@ -43,6 +43,12 @@ Dictating power starts a superscript.
 
 Dictating poof starts a subscript in parentheses (poof is short for power of).
 
+Dictating poof (transpose or pose): starts a superscript in parentheses with the parentheses followed by the transpose symbol.
+
+Dictating puff (small positive integer) raises the previous character to that integer in parentheses.
+
+Dictating puff (transpose or pose) (small nonnegative integer): raises the previous character to that integer in parentheses and transposed.
+
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
 
