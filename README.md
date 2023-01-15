@@ -43,6 +43,12 @@ Dictating power starts a superscript.
 
 Dictating poof starts a subscript in parentheses (poof is short for power of).
 
+Dictating poof (transpose or pose): starts a superscript in parentheses with the parentheses followed by the transpose symbol.
+
+Dictating puff (small positive integer) raises the previous character to that integer in parentheses.
+
+Dictating puff (transpose or pose) (small nonnegative integer): raises the previous character to that integer in parentheses and transposed.
+
 # Manual Subscripting
 Dictating subscript, script, or sub manually starts a subscript.
 
@@ -58,6 +64,8 @@ cape: presses escape, which usually exits the current text container. Note that 
 back cape or shift cape: presses shift escape, which usually exits the current text container by moving back.
 
 out: goes to the end of the current line and then to the right. Useful for things like exiting parentheses, subscripts, and superscripts.
+
+leave or leaf: does the same thing as out twice.
 
 move: goes to the end of the current line.
 
