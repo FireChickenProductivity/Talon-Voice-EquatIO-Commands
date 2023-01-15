@@ -230,6 +230,12 @@ vertical [line] or vert line: creates a small vertical line
 
 infinity or infinite: infinity symbol
 
+norm: norm symbol
+
+norm (small nonnegative integer): the specified integer norm
+
+norm (infinity or infinite): the infinity norm
+
 <h2>Calculus Commands</h2>
 <h3>Limits</h3>
 limit: types lim and then subscripts.
