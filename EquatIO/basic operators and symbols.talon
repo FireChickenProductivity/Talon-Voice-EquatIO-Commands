@@ -119,3 +119,5 @@ dollar|dollars: '$'
 vertical [line]|vert line: '\\mid '
 
 infinity|infinite: '\\infty '
+
+join [op|operator]: '⋈'
