@@ -236,6 +236,8 @@ norm (small nonnegative integer): the specified integer norm
 
 norm (infinity or infinite): the infinity norm
 
+join [op or operator]: the relational algebra join operator.
+
 <h2>Calculus Commands</h2>
 <h3>Limits</h3>
 limit: types lim and then subscripts.
