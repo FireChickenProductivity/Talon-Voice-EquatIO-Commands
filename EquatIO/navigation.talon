@@ -14,9 +14,6 @@ leave|leaf:
 move:
     edit.line_end()
 
-back:
-    edit.left()
-
 who:
     edit.right()
 
