@@ -57,8 +57,6 @@ who: moves the cursor to the right.
 
 pass: moves the cursor to the right twice.
 
-back: moves the cursor to the left.
-
 cape: presses escape, which usually exits the current text container. Note that a normal Talon setup already has the command escape that already presses escape.
 
 back cape or shift cape: presses shift escape, which usually exits the current text container by moving back.
