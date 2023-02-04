@@ -92,6 +92,7 @@ capital_variable_start_symbols = {
     'fee': '\\Phi ',
     'psi': '\\Psi ',
     'omega': '\\Omega ',
+    'upsilon': '\\Upsilon ',
 }
 
 variable_continuation_symbols = {
