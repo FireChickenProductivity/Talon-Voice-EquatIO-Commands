@@ -234,7 +234,13 @@ norm (small nonnegative integer): the specified integer norm
 
 norm (infinity or infinite): the infinity norm
 
-join [op or operator]: the relational algebra join operator.
+join [op or operator]: the relational algebra join operator
+
+assign or assignment: the relational algebra assignment operator
+
+project or projection: the relational algebra projection operator plus subscript
+
+select or selection: the relational algebra selection operator plus subscript
 
 <h2>Calculus Commands</h2>
 <h3>Limits</h3>
