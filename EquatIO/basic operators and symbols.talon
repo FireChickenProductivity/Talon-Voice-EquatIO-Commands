@@ -121,3 +121,6 @@ vertical [line]|vert line: '\\mid '
 infinity|infinite: '\\infty '
 
 join [op|operator]: '⋈'
+assign|assignment: '\\longleftarrow '
+project|projection: '\\Pi _'
+select|selection: '\\sigma _'
