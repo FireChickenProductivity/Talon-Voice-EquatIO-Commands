@@ -124,3 +124,5 @@ join [op|operator]: '⋈'
 assign|assignment: '\\longleftarrow '
 project|projection: '\\Pi _'
 select|selection: '\\sigma _'
+
+circle plus: '\\oplus '
