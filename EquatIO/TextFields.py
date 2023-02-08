@@ -18,6 +18,14 @@ class Actions:
     def equatio_dictation_start_new_draft():
         '''Opens the draft window and selects all the text'''
         start_new_draft()
+    def equatio_insert_with_text_field(text: str):
+        '''Creates a text field, inserts the text into it, and exits the text field'''
+        actions.user.equatio_make_text_field()
+        actions.insert(text)
+        actions.user.equatio_exit_text_field()
+    def equatio_padded_insert_with_text_field(text: str):
+        '''Creates a text field, inserts the text into it padded with spaces, and exits the text field'''
+        actions.user.equatio_insert_with_text_field(' ' + text + ' ')
     
 def start_new_draft():
     open_draft()
