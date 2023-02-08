@@ -46,7 +46,11 @@ MINUS_RULE = 'minus|dash|hyphen|negative'
 def equatio_minus(input) -> str:
     return '-'
 
-@mod.capture(rule = '<number_small>|<user.equatio_minus>|<user.equatio_point>')
+@mod.capture(rule = 'oh')
+def equatio_oh_as_zero(input) -> str:
+    return '0'
+
+@mod.capture(rule = '<number_small>|<user.equatio_minus>|<user.equatio_point>|<user.equatio_oh_as_zero>')
 def equatio_small_number_symbol(input) -> str:
     return input
 
