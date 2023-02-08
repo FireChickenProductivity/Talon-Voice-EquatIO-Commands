@@ -31,6 +31,12 @@ toss <user.equatio_small_number_symbol>+:
     user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
     edit.right()
 
+pillar <user.equatio_small_number_symbol>+:
+    number_of_numbers = user.compute_number_of_individual_numbers_in_small_number_symbol_list(equatio_small_number_symbol_list)
+    user.equatio_build_matrix_with_square_boundary(number_of_numbers, 1)
+    user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
+    edit.right()
+
 new column:
     key(shift-space)
 
