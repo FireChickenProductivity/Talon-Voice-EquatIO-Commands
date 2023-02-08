@@ -332,7 +332,7 @@ leave matrix left: leaves the matrix and goes to the left.
 
 leave matrix right: leaves the matrix and goes to the right. Unfortunately, this command only moves to the right of the innermost container of the matrix, so using this command with a matrix with multiple containers (such as multiple parentheses, lines, or square brackets) does not completely get you out of the matrix.
 
-send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly).
+send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly). This command additionally interprets "oh" as the number zero. 
 
 toss (a list of symbols that can be small integers, minus signs, or decimal points): the same as send but presses right twice at the end instead of only once.
 
