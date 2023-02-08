@@ -78,6 +78,14 @@ class Actions:
             actions.insert(symbol)
             if str(symbol).isdigit():
                 actions.key('escape')
+    def compute_number_of_individual_numbers_in_small_number_symbol_list(symbols: list) -> int:
+        '''Computes the number of numbers in a small number symbol list'''
+        count = 0
+        for symbol in symbols:
+            if str(symbol).isdigit():
+                count += 1
+        return count
+
     def equatio_summation():
         '''Creates the summation symbol and moves the cursor to the start of it'''
         paste_text(r'\sum _{ }^{ }')
