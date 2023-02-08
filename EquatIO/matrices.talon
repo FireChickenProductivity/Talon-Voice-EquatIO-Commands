@@ -1,16 +1,16 @@
 app: EquatIO
 -
 
-matrix <user.equatio_matrix_boundary> <number_small> [by] <number_small>:
+(matrix|mat) <user.equatio_matrix_boundary> <number_small> [by] <number_small>:
     user.equatio_build_matrix_with_boundary(equatio_matrix_boundary, number_small_1, number_small_2)
 
-matrix <number_small> [by] <number_small>:
+(matrix|mat) <number_small> [by] <number_small>:
     user.equatio_build_matrix_with_square_boundary(number_small_1, number_small_2)
 
-[matrix] augment <number_small> [by] <number_small>:
+[matrix|mat] augment <number_small> [by] <number_small>:
     user.equatio_build_matrix_augment(number_small_1, number_small_2)
 
-[matrix] augment <number_small>:
+[matrix|mat] augment <number_small>:
     user.equatio_build_matrix_augment(number_small_1, 1)
 
 column <number_small>:
@@ -19,13 +19,23 @@ column <number_small>:
 column <user.equatio_matrix_boundary> <number_small>:
     user.equatio_build_matrix_with_boundary(equatio_matrix_boundary, number_small, 1)
 
-matrix column <user.equatio_matrix_boundary> <number_small> [by] <number_small>:
+(matrix|mat) column <user.equatio_matrix_boundary> <number_small> [by] <number_small>:
     user.equatio_build_column_matrix_with_boundary(equatio_matrix_boundary, number_small_1, number_small_2)
-matrix column <number_small> [by] <number_small>:
+(matrix|mat) column <number_small> [by] <number_small>:
     user.equatio_build_column_matrix_with_square_boundary(number_small_1, number_small_2)
 
 send <user.equatio_small_number_symbol>+:
     user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
+
+toss <user.equatio_small_number_symbol>+:
+    user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
+    edit.right()
+
+pillar <user.equatio_small_number_symbol>+:
+    number_of_numbers = user.compute_number_of_individual_numbers_in_small_number_symbol_list(equatio_small_number_symbol_list)
+    user.equatio_build_matrix_with_square_boundary(number_of_numbers, 1)
+    user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
+    edit.right()
 
 new column:
     key(shift-space)

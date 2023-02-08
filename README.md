@@ -300,17 +300,17 @@ L G: lg
 
 # Matrix Commands
 <h2>Making Matrices</h2>
-matrix (small positive integer) [by] (small positive integer): creates a matrix surrounded by square brackets with the number of rows specified by the first integer and the number of columns specified by the second integer.
+(matrix or mat) (small positive integer) [by] (small positive integer): creates a matrix surrounded by square brackets with the number of rows specified by the first integer and the number of columns specified by the second integer.
 
 column (a small positive integer): creates a column surrounded by square brackets with the number of rows given by the integer.
 
-matrix column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time. Note that the matrix navigation commands will treat each column as its own matrix.
+(matrix or mat) column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time. Note that the matrix navigation commands will treat each column as its own matrix.
 
 By dictating the name of a matrix container in one of those commands before the first positive integer, those commands will use that container in place of the standard square brackets. Options currently include pipe or bar for vertical lines, pipes or bars for double vertical lines, brace for curly braces, paren for parentheses, and square or bracket for the standard square brackets.
 
-[matrix] augment (small positive integer) [by] (small positive integer): augments the current matrix with an empty additional matrix with the specified dimensions. Assumes that the cursor is to the right of the matrix to augment but within its container (the container is the stuff around the matrix, such as square brackets, parentheses, etc). The first integer gives the number of rows and the second integer gives the number of columns.
+[(matrix or mat)] augment (small positive integer) [by] (small positive integer): augments the current matrix with an empty additional matrix with the specified dimensions. Assumes that the cursor is to the right of the matrix to augment but within its container (the container is the stuff around the matrix, such as square brackets, parentheses, etc). The first integer gives the number of rows and the second integer gives the number of columns.
 
-[matrix] augment (small positive integer): same as the previous command but uses 1 as the number of columns.
+[(matrix or mat)] augment (small positive integer): same as the previous command but uses 1 as the number of columns.
 
 <h2>Navigating Matrices</h2>
 The following movement commands assume that the cursor is within a matrix entry and not within another text container.
@@ -332,7 +332,11 @@ leave matrix left: leaves the matrix and goes to the left.
 
 leave matrix right: leaves the matrix and goes to the right. Unfortunately, this command only moves to the right of the innermost container of the matrix, so using this command with a matrix with multiple containers (such as multiple parentheses, lines, or square brackets) does not completely get you out of the matrix.
 
-send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly).
+send (a list of symbols that can be small integers, minus signs, or decimal points): inputs the symbols into the matrix and attempts to go to the next entry after each number (the cursor must not be within a text container within the matrix for it to go to the next entry properly). This command additionally interprets "oh" as the number zero. 
+
+toss (a list of symbols that can be small integers, minus signs, or decimal points): the same as send but presses right twice at the end instead of only once.
+
+pillar: (a list of symbols that can be small integers, minus signs, or decimal points): creates a column matrix with the specified entries. The same as using the toss command into a predefined empty column matrix that has the same number of entries as numbers were dictated.
 
 # Button Usage and Clicking Commands
 
