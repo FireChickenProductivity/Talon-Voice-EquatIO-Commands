@@ -336,6 +336,8 @@ send (a list of symbols that can be small integers, minus signs, or decimal poin
 
 toss (a list of symbols that can be small integers, minus signs, or decimal points): the same as send but presses right twice at the end instead of only once.
 
+pillar: (a list of symbols that can be small integers, minus signs, or decimal points): creates a column matrix with the specified entries. The same as using the toss command into a predefined empty column matrix that has the same number of entries as numbers were dictated.
+
 # Button Usage and Clicking Commands
 
 This set up includes commands for pressing buttons provided that the user runs commands that will tell it where the buttons are. Dictating "update insert math" will tell the system that the insert math button is located at the cursor's current position. Dictating "update math return" will tell the system that the cursor's current position is the position to click on to return to editing math. Dictating "update equation editor" tells the system that the cursor's current position is the position to click on to toggle the equation editor. Dictating "update edit math" tells the system that the cursor's current position is the position of the edit math button.
