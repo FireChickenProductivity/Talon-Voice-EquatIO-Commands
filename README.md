@@ -373,7 +373,13 @@ finish: if in equatio and dictation mode, switches to command mode and exits the
 
 Dragon text: if using the dragon speech engine with talon, this will insert a text field and activate dragon mode. This command is anchored (cannot be chained).
 
+weild (word): inserts the word into equatio inside a text field and exits the text field.
 
+warp (word): inserts the word into equatio inside a text field surrounded by spaces.
+
+peeled (word): inserts the word capitalized and with a space after it into equatio inside a text field.
+
+sealed (dictation prose): inserts the specified prose into equatio inside an equatio text field surrounded by spaces.
 
 # Settings
 Settings can be adjusted in the settings.talon file.
