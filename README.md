@@ -145,7 +145,7 @@ asymp or order [of] [magnitude]: order of magnitude symbol
 
 equilibrium or balance: equilibrium symbol
 
-square root or root or square root of: square root symbol
+square root or root or square root of or suit: square root symbol
 
 plus or minus: plus or minus symbol
 
