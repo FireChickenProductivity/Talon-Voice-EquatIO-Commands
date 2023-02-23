@@ -244,6 +244,8 @@ select or selection: the relational algebra selection operator plus subscript
 
 circle plus: a plus sign in a circle
 
+[right] arrow: a right arrow
+
 <h2>Calculus Commands</h2>
 <h3>Limits</h3>
 limit: types lim and then subscripts.
