@@ -129,3 +129,6 @@ circle plus: '\\oplus '
 
 (die|diagonal) dots: '\\ddots '
 (vert|vertical) dots: '\\vdots '
+
+right arrow: '\\longrightarrow '
+arrow: '\\longrightarrow '
