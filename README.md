@@ -236,6 +236,12 @@ norm (infinity or infinite): the infinity norm
 
 join [op or operator]: the relational algebra join operator
 
+left join [op or operator]: the relational algebra left join operator
+
+right join [op or operator]: the relational algebra right join operator
+
+[full] outer join [op or operator]: the relational algebra outer join operator
+
 assign or assignment: the relational algebra assignment operator
 
 project or projection: the relational algebra projection operator plus subscript
