@@ -9,13 +9,14 @@ EXPONENTIATION_SPECIFIER = {
     'cubed': '3',
     'inverse': '-1',
     'transpose': 'T',
+    'perp': '\perp ',
 }
 
 PRIME_SYMBOL = "'"
 
 
 
-@mod.capture(rule = 'squared|cubed|inverse|transpose|prime|(to the <user.ordinals>)')
+@mod.capture(rule = 'squared|cubed|inverse|transpose|prime|perp|(to the <user.ordinals>)')
 def equatio_exponentiation_specifier(input) -> VariablePart:
     if input[0] == 'prime':
         return VariablePart('prime', PRIME_SYMBOL)
