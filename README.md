@@ -35,6 +35,8 @@ Dictating inverse raises the previous character to the minus first power.
 
 Dictating transpose gives the previous character the superscript T.
 
+Dictating perp gives the previous character the superscript the perpendicular symbol.
+
 Dictating to the followed by an ordinal number from second, third ... through ninetyninth raises the previous character to the corresponding exponent (second gives 2, third gives 3, tenth gives 10, etc). 
 
 Dictating the above exponentiation commands immediately after something that will be automatically subscripted will cause the exponentiation to go into the subscript.
