@@ -19,6 +19,12 @@ column <number_small>:
 column <user.equatio_matrix_boundary> <number_small>:
     user.equatio_build_matrix_with_boundary(equatio_matrix_boundary, number_small, 1)
 
+layer <number_small>:
+    user.equatio_build_matrix_with_square_boundary(1, number_small)
+
+layer <user.equatio_matrix_boundary> <number_small>:
+    user.equatio_build_matrix_with_boundary(equatio_matrix_boundary, 1, number_small)
+
 (matrix|mat) column <user.equatio_matrix_boundary> <number_small> [by] <number_small>:
     user.equatio_build_column_matrix_with_boundary(equatio_matrix_boundary, number_small_1, number_small_2)
 (matrix|mat) column <number_small> [by] <number_small>:
@@ -34,6 +40,12 @@ toss <user.equatio_small_number_symbol>+:
 pillar <user.equatio_small_number_symbol>+:
     number_of_numbers = user.compute_number_of_individual_numbers_in_small_number_symbol_list(equatio_small_number_symbol_list)
     user.equatio_build_matrix_with_square_boundary(number_of_numbers, 1)
+    user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
+    edit.right()
+
+surface <user.equatio_small_number_symbol>+:
+    number_of_numbers = user.compute_number_of_individual_numbers_in_small_number_symbol_list(equatio_small_number_symbol_list)
+    user.equatio_build_matrix_with_square_boundary(1, number_of_numbers)
     user.equatio_input_symbols_into_matrix(equatio_small_number_symbol_list)
     edit.right()
 

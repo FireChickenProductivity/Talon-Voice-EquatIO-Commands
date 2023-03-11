@@ -314,6 +314,8 @@ L G: lg
 
 column (a small positive integer): creates a column surrounded by square brackets with the number of rows given by the integer.
 
+layer (a small positive integer): creates a row surrounded by square brackets with the number of columns given by the integer.
+
 (matrix or mat) column (small positive integer) [by] (small positive integer): creates a matrix built out of columns surrounded by square brackets with the number of rows given by the first integer and the number of columns given by the second integer. This is useful if you want to input entries a column at a time instead of doing it a row at a time. Note that the matrix navigation commands will treat each column as its own matrix.
 
 By dictating the name of a matrix container in one of those commands before the first positive integer, those commands will use that container in place of the standard square brackets. Options currently include pipe or bar for vertical lines, pipes or bars for double vertical lines, brace for curly braces, paren for parentheses, and square or bracket for the standard square brackets.
@@ -346,7 +348,9 @@ send (a list of symbols that can be small integers, minus signs, or decimal poin
 
 toss (a list of symbols that can be small integers, minus signs, or decimal points): the same as send but presses right twice at the end instead of only once.
 
-pillar: (a list of symbols that can be small integers, minus signs, or decimal points): creates a column matrix with the specified entries. The same as using the toss command into a predefined empty column matrix that has the same number of entries as numbers were dictated.
+pillar (a list of symbols that can be small integers, minus signs, or decimal points): creates a column matrix with the specified entries. The same as using the toss command into a predefined empty column matrix that has the same number of entries as numbers were dictated.
+
+surface (a list of symbols that can be small integers, minus signs, or decimal points): creates a row matrix with the specified entries. The same as using the toss command into a predefined empty row matrix that has the same number of entries as numbers were dictated.
 
 (die or diagonal) dots: produces diagonal dots.
 
