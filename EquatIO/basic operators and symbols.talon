@@ -129,6 +129,12 @@ project|projection: '\\Pi _'
 select|selection: '\\sigma _'
 
 circle plus: '\\oplus '
+circle dot plus: 
+    insert('\\stackrel ')
+    insert('\\cdot ')
+    key(right)
+    insert('\\oplus ')
+    key(right)
 
 (die|diagonal) dots: '\\ddots '
 (vert|vertical) dots: '\\vdots '
