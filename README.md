@@ -252,6 +252,8 @@ select or selection: the relational algebra selection operator plus subscript
 
 circle plus: a plus sign in a circle
 
+circle dot plus: a dot above a plus sign in a circle
+
 [right] arrow: a right arrow
 
 <h2>Calculus Commands</h2>
