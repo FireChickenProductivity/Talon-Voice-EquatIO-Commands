@@ -158,7 +158,7 @@ minus or plus: minus or plus symbol
 
 (logical or logic or lo) and or land: and symbol
 
-(logical or logic) or: or symbol
+(logical or logic or lo) or: or symbol
 
 implies: implication symbol
 
