@@ -46,7 +46,7 @@ MINUS_RULE = 'minus|dash|hyphen|negative'
 def equatio_minus(input) -> str:
     return '-'
 
-@mod.capture(rule = 'oh')
+@mod.capture(rule = 'oh|nil')
 def equatio_oh_as_zero(input) -> str:
     return '0'
 
