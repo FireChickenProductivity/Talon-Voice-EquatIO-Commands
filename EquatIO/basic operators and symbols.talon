@@ -88,7 +88,7 @@ for all: '\\forall '
 element [of]: '\\in '
 [(logical|logic)] not: '\\neg '
 (logical|logic|lo) and|land: '\\wedge '
-[(logical|logic)] or: '\\vee '
+(logical|logic|lo) or: '\\vee '
 
 angle (shape|symbol): '\\angle '
 triangle [shape]: '\\triangle '
