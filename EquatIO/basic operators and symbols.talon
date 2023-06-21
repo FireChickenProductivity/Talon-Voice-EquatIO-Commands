@@ -113,6 +113,7 @@ equilibrium|balance: '\\rightleftharpoons '
 [the] integers: user.equatio_paste_text('\\mathbb{{Z}}')
 [the] (rational|rationals) [numbers]: user.equatio_paste_text('\\mathbb{{Q}}')
 [the] (irrational|irrationals): user.equatio_paste_text('\\tilde{{\\mathbb{{Q}}}}')
+[the] natural numbers: user.equatio_paste_text('\\mathbb{{N}}')
 cent|cents: '¢'
 dollar|dollars: '$'
 
