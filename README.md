@@ -198,6 +198,8 @@ intersect or intersection: intersection symbol
 
 [the] (irrational or irrationals): the irrational numbers symbol
 
+[the] natural numbers: the natural numbers symbol
+
 <h2>Geometry Symbol Commands</h2>
 parallel: parallel symbol
 
