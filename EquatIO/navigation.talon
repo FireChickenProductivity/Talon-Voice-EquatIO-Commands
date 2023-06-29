@@ -53,3 +53,7 @@ reek|re quill|reeks|re quills|requal|requals:
     edit.right()
     insert('=')
 
+rough:
+    edit.right()
+    insert('()')
+    edit.left()
