@@ -84,6 +84,10 @@ rash: /
 
 reek or re quill or reeks or re quills or requal or requals: =
 
+rough: ()
+
+(the cursor is moved inside the parentheses)
+
 # Symbol Commands
 stuff in square brackets is optional
 
