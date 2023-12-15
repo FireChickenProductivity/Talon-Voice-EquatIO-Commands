@@ -1,33 +1,41 @@
-from talon import Module, actions, clip
+from talon import Module, actions, clip, settings
 
 mod = Module()
 
 
 
 
-clipboard_operation_delay = mod.setting(
-    'equatio_clipboard_operation_delay',
+clipboard_operation_delay_setting_name = 'equatio_clipboard_operation_delay'
+clipboard_operation_delay = 'user.' + clipboard_operation_delay_setting_name
+mod.setting(
+    clipboard_operation_delay_setting_name,
     type = int,
     default = 200,
     desc = 'How long equatio commands should pause when doing copying and pasting'
 )
 
-symbol_input_delay = mod.setting(
-    'equatio_symbol_input_delay',
+symbol_input_delay_setting_name = 'equatio_symbol_input_delay'
+symbol_input_delay = 'user.' + symbol_input_delay_setting_name
+mod.setting(
+    symbol_input_delay_setting_name,
     type = int,
     default = 200,
     desc = 'How long equatio commands should pause when inputting symbols'
 )
 
-selection_delay = mod.setting(
-    'equatio_selection_delay',
+selection_delay_setting_name = 'equatio_selection_delay'
+selection_delay = 'user.' + selection_delay_setting_name
+mod.setting(
+    selection_delay_setting_name,
     type = int,
     default = 500,
     desc = 'How long equatio command should pause when selecting'
 )
 
-movement_delay = mod.setting(   
-    'equatio_movement_delay',
+movement_delay_setting_name = 'equatio_movement_delay'
+movement_delay = 'user.' + movement_delay_setting_name
+mod.setting(   
+    movement_delay_setting_name,
     type = int,
     default = 50,
     desc = 'How long certain commands will pause during movement'
@@ -69,7 +77,7 @@ class Actions:
     def equatio_type_symbol_name_and_press_enter (symbol_name: str):
         '''Types the symbol name and presses enter'''
         actions.insert(' ' + symbol_name)
-        actions.sleep(f'{symbol_input_delay.get()}ms')
+        actions.sleep(f'{settings.get(symbol_input_delay)}ms')
         actions.key('enter')
 
     def equatio_input_symbols_into_matrix(symbols: list):
@@ -99,10 +107,10 @@ class Actions:
 
     def equatio_wait_movement_delay():
         '''Waits for the movement delay amount'''
-        actions.sleep(f'{movement_delay.get()}ms')
+        actions.sleep(f'{settings.get(movement_delay)}ms')
     def equatio_wait_selection_delay():
         '''Waits for the selection delay amount'''
-        actions.sleep(f'{selection_delay.get()}ms')
+        actions.sleep(f'{settings.get(selection_delay)}ms')
     def equatio_get_selected_text() -> str:
         '''Obtains the selected text through the clipboard'''
         with clip.revert():
@@ -119,6 +127,6 @@ def paste_text (text: str):
 		wait_long_enough_to_let_clipboard_revert_properly()
 
 def wait_long_enough_to_let_clipboard_revert_properly():
-	actions.sleep(f'{clipboard_operation_delay.get()}ms')
+	actions.sleep(f'{settings.get(clipboard_operation_delay)}ms')
 
 
