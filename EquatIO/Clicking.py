@@ -1,4 +1,4 @@
-from talon import actions, Module
+from talon import actions, Module, settings
 from .MousePosition import MousePositionFile, MousePosition
 import os
 
@@ -11,38 +11,48 @@ def compute_mouse_storage_directory():
 
 module = Module()
 
-mouse_movement_delay = module.setting(
-    'equatio_mouse_movement_delay',
+mouse_movement_delay_setting_name = 'equatio_mouse_movement_delay'
+mouse_movement_delay = 'user.' + mouse_movement_delay_setting_name
+module.setting(
+    mouse_movement_delay_setting_name,
     type = int,
     default = 500,
     desc = 'How long to pause after moving the mouse for equatio commands. Increase this if button clicking is not working for you.',
 )
 
-click_delay = module.setting(
-    'equatio_click_delay',
+click_delay_setting_name = 'equatio_click_delay'
+click_delay = 'user.' + click_delay_setting_name
+module.setting(
+    click_delay_setting_name,
     type = int,
     default = 200,
     desc = 'How long to pause after clicking for certain equatio commands.',
 )
 
-insert_delay = module.setting(
-    'equatio_insert_delay',
+insert_delay_setting_name = 'equatio_insert_delay'
+insert_delay = 'user.' + insert_delay_setting_name
+module.setting(
+    insert_delay_setting_name,
     type = int,
     default = 4000,
     desc = 'How long to wait after clicking the insert math button.'
     ' Increase this if math insertion commands are not working properly but the insert math button is getting properly clicked.',
 )
 
-edit_delay = module.setting(
-    'equatio_edit_delay',
+edit_delay_setting_name = 'equatio_edit_delay'
+edit_delay = 'user.' + edit_delay_setting_name
+module.setting(
+    edit_delay_setting_name,
     type = int,
     default = 2000,
     desc = 'How long to wait after clicking the edit math button.'
     ' Increase this if math edit commands are not working properly but the edit math button is getting properly clicked.',
 )
 
-desmos_browser = module.setting(
-    'equatio_desmos_browser',
+desmos_browser_setting_name = 'equatio_desmos_browser'
+desmos_browser = 'user.' + desmos_browser_setting_name
+module.setting(
+    desmos_browser_setting_name,
     type = str,
     default = 'edge',
     desc = 'Used with the knausj focus action to try to bring up the browser with desmos'
@@ -120,13 +130,13 @@ class Actions:
         click_position(position)
 
 def focus_desmos_browser():
-    actions.user.switcher_focus(desmos_browser.get())
+    actions.user.switcher_focus(settings.get(desmos_browser))
 
 def wait_insert_delay():
     wait_delay(insert_delay)
 
 def wait_delay(setting):
-    wait_milliseconds(setting.get())
+    wait_milliseconds(settings.get(setting))
 
 def wait_milliseconds(time: int):
     actions.sleep(f'{time}ms')

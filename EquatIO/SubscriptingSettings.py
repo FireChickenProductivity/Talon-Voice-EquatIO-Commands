@@ -1,4 +1,4 @@
-from talon import Module
+from talon import Module, settings
 
 module = Module()
 
@@ -8,8 +8,10 @@ class Actions:
         '''Updates the subscript setting'''
         current_subscript_scope.update_scope(new_value)
 
-default_subscript_setting = module.setting(
-    'equatio_default_subscript_setting',
+default_subscript_setting_setting_name = 'equatio_default_subscript_setting'
+default_subscript_setting = 'user.' + default_subscript_setting_setting_name
+module.setting(
+    default_subscript_setting_setting_name,
     type = str,
     default = 'automatic',
     desc = 'This is the subscript setting initially active upon starting up talon',
@@ -44,4 +46,4 @@ class SettingScopeManager:
 
 
 
-current_subscript_scope = SettingScopeManager(default_subscript_setting.get(), subscript_scope_updater)
+current_subscript_scope = SettingScopeManager(settings.get(default_subscript_setting), subscript_scope_updater)
