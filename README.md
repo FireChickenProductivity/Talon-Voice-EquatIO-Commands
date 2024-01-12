@@ -425,3 +425,6 @@ The user.equatio_click_delay setting determines how long in milliseconds certain
 The user.equatio_insert_delay setting determines how long to wait in milliseconds for equatio to finish inserting math. If any commands do not wait long enough for equatio to finish inputting math to work properly, try increasing this.
 
 The user.equatio_edit_delay setting determines how long to wait in milliseconds for equatio to finish loading math after clicking the edit math button. Try increasing this if any commands do not wait long enough for equatio to finish loading math to edit.
+
+# Credit
+GitHub user whatIV contributed the initial code for building matrices, Leibnitz derivatives, and multiple integrals.
