@@ -45,10 +45,10 @@ class MousePosition:
     def from_text(text: str):
         horizontal_start = text.index(MousePosition.STRING_START) + 1
         horizontal_ending = text.index(MousePosition.COORDINATE_SEPARATOR)
-        horizontal = int(text[horizontal_start : horizontal_ending])
+        horizontal = int(float(text[horizontal_start : horizontal_ending]))
         vertical_start = horizontal_ending + 1
         vertical_ending = text.index(MousePosition.STRING_ENDING)
-        vertical = int(text[vertical_start : vertical_ending])
+        vertical = int(float(text[vertical_start : vertical_ending]))
         return MousePosition(horizontal, vertical)
 
 class MousePositionFile:
