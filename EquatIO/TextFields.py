@@ -26,7 +26,9 @@ class Actions:
     def equatio_padded_insert_with_text_field(text: str):
         '''Creates a text field, inserts the text into it padded with spaces, and exits the text field'''
         actions.user.equatio_insert_with_text_field(' ' + text + ' ')
-    
+    def equatio_convert_text_to_upper_case(text: str) -> str:
+        '''Converts the text to upper case'''
+        return text.capitalize()
 def start_new_draft():
     open_draft()
     actions.edit.select_all()

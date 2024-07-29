@@ -12,7 +12,7 @@ text window:
 weild <user.word>:
   user.equatio_insert_with_text_field(word)
 peeled <user.word>:
-  capital_word = user.formatted_text(word, "hammer")
+  capital_word = user.equatio_convert_text_to_upper_case(word)
   user.equatio_insert_with_text_field(capital_word + ' ')
 warp <user.word>:
   user.equatio_padded_insert_with_text_field(word)
