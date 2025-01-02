@@ -1,4 +1,4 @@
-from talon import Module, settings
+from talon import Module, settings, app
 
 module = Module()
 
@@ -44,6 +44,10 @@ class SettingScopeManager:
     def get_scope(self):
         return self.value
 
+current_subscript_scope = SettingScopeManager("", subscript_scope_updater)
 
+def on_ready():
+    global current_subscript_scope
+    current_subscript_scope.update_scope(settings.get(default_subscript_setting))
 
-current_subscript_scope = SettingScopeManager(settings.get(default_subscript_setting), subscript_scope_updater)
+app.register('ready', on_ready)
